@@ -8,12 +8,16 @@
 
     function appendNumber(number) {
         
-        
+        if(display.value.includes('.') && number === '.'){
+            return;
+        }
             display.value += number;
         
        
     }
     function appendOperator(operator) {
+        if(display.value === '') return;
+       
         display.value += operator;
     }
     function clearDisplay(){
