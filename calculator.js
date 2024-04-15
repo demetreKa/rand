@@ -29,11 +29,11 @@
     }
 
  function sqrt(){
-    if(display.value.includes('√')){
+
             
         display.value = Math.sqrt(parseInt(display.value));
        console.log(display.value);
     return display.value;
- }
+
 }
 
